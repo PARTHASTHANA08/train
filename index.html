@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <SCRIPT src="https://aframe.io/releases/1.0.4/aframe.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        <A-SCENE background = "color:yellow">
+            <A-CAMERA position = "0 0 10"></A-CAMERA>
+            <A-ASSETS>      
+
+                <!--Add Code Here-->
+              <A-ASSET-ITEM id="train-obj" src="./model/tinker.obj" ></A-ASSET-ITEM>
+              <A-ASSET-ITEM id="train-mtl" src = "./model/obj.mtl"></A-ASSET-ITEM>
+            </A-ASSETS>
+            <A-ENTITY obj-model="obj:#train-obj;mtl:#train-mtl" position="0 0 -15" rotation=" -90 90 0" scale="0.1 0.1 0.1">
+            </A-ENTITY>
+            <A-CIRCLE id="floor" position="0 0 -15" rotation="-70 0 0" radius="60" shadow="receive: true" visible="true"
+               color="brown">
+            </A-CIRCLE>
+            <A-BOX color="black" rotation="0 0 0" position="0 0 -25" width="100" height="1">
+            </A-BOX>
+            <A-BOX color="black" rotation="0 0 0" position="0 0 -15" width="100" height="1">
+            </A-BOX>
+        </A-SCENE>
+    </BODY>
+</HTML>
